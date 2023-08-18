@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+
+    <meta charset="utf-8">
+</head>
+
+<body <form style="background-color:black;width: 500px;height: 650px;border:solid;">
+
+
+    <h1 align="center" style="color: #fff000">Registration Form</h1>
+ 
+    <br>
+
+    <label for="first-name" style="margin-left: 10px; color: #FFFFF0">First Name: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="first-name" type="text" name="first-name" placeholder="Your First Name" required style="border: solid 1px;margin-left:10px;width: 400px">
+    <br>
+
+    <br>
+    <label for="last-name" style="margin-left: 10px;color: #FFFFF0">Last Name: <span
+            style="color: #FF6347">*</span></label>
+    <input id="last-name" type="text" name="last-name" placeholder="Your Last Name" style="border: solid 1px;margin-left:10px;width: 400px" required><br><br>
+    <!-- GENDER INFO -->
+    <label for="gender" style="margin-left: 10px;color: #FFFFF0">Gender: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="male" type="radio" name="gender-choice" value="male">
+    <label for="male" style="margin-left: 10px;color: #FFFFF0">Male:</label>&nbsp;
+    <input id="female" type="radio" name="gender-choice" value="female">
+
+    <label for="female" style="margin-left: 10px;color: #FFFFF0">Female:</label>&nbsp;
+    <input id="other" type="radio" name="gender-choice" value="other">
+    <label for="other" style="margin-left: 10px;color: #FFFFF0">Other:</label>&nbsp;
+    <br>
+    <br>
+    <!-- DATE OF BIRTH INFO -->
+    <legend style="color: #FFFFF0; margin-left: 10px">Date of brith: <span style="color: #FF6347">*</span></legend>
+    <label for="month" style="margin-left: 10px"></label>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" maxlength="12" placeholder="Enter date of birth" />
+    <br>
+    <br>
+    <!-- USERNAME INFO -->
+    <label for="user-name" style="margin-left: 10px;;color: #FFFFF0">User Name: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="user-name" type="text" name="user-name" placeholder="Your User Name" required style="border: solid 1px;margin-left:10px;width: 400px">
+    <br>
+    <br>
+    <!-- MAIL INFO -->
+    <label for="email" style="margin-left: 10px;;color: #FFFFF0">Email: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="email" type="email" name="email" style="border: solid 1px;margin-left: 10px;width: 400px;" placeholder="example@anymail.com" required>
+    <br>
+    <br>
+
+    <!-- PASSWORD INFO -->
+    <label for="password" style="margin-left: 10px;color: #FFFFF0">Password: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="password" type="password" name="password" style="border: solid 1px;margin-left: 10px;width: 200px;" placeholder="**********" required title="5 to 10 characters" pattern=".{5,10}">
+    <br>
+    <br>
+    <!-- PASSWORD CONFIRMATION INFO -->
+    <label for="password-confirmation" style="margin-left: 10px;color: #FFFFF0">Confirm your Password: <span
+            style="color: #FF6347">*</span></label><br>
+    <input id="password-confirmation" type="password" name="password-confirmation" style="border: solid 1px;margin-left: 10px;width: 200px;" placeholder="**********" required title="5 to 10 characters" pattern=".{5,10}">
+    <br>
+    <br>
+    <!-- AGREEMENT INFO -->
+    <label for="agree-terms" style="margin-left: 10px;color: #FFFFF0" required>I agree to the terms and
+        conditions</label>
+    <input id="agree-terms" type="checkbox" name="agree-terms"><br>
+
+    <p style="font-size: 90%; color: #FFFFF0; margin-left: 10px">(<span style="color: #FF6347">*</span>): Required fields
+    </p>
+    <br>
+    <!-- SUBMIT AND RESET INFO -->
+    <div class="ct-btn">
+        <a href="reg_success.html">
+            <button class="Submit"><span class="bg-height"></span><span class="btn-text">Submit</span></button>
+        </a>
+    </div>
+    <!-- type="reset" to clear all the fields of text -->
+    <div class="ct-btn">
+        &NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;&NonBreakingSpace;&nbsp;
+        <a href="reg.html">
+            <button class="Reset"><span class="bg-height"></span><span class="btn-text">Reset</span></button>
+        </a>
+    </div>
+    </form>
+</body>
+
+</html>

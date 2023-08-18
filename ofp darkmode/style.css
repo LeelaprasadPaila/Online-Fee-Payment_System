@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+}
+
+/* blue neon
+.button {
+    outline: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #FFFF00;
+    background: #FFFF00;
+    color: #000;
+    font-weight: 600;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #4b00ff;
+    color: #fff;
+    box-shadow: 0 0 5px #4b00ff,
+                0 0 20px rgb(75 0 255 / 0.8),
+                0 0 35px rgb(75 0 255 / 0.7),
+                0 0 50px rgb(75 0 255 / 0.6);
+    border-color: #fff;
+}*/
+.button {
+    outline: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #FFFF00;
+    background: #FFFF00;
+    color: #000;
+    font-weight: 600;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.button:hover {
+    background-color: #FFFF00;
+    color: #fff;
+    box-shadow: 0 0 5px #FFFF00,
+                0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7),
+                0 0 50px rgb(255 255 0 / 0.6);
+    border-color: #fff;
+}

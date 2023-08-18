@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="pay.css">
+
+
+</head>
+
+<body style="color:white;">
+
+    <h1 align="center"><b><u>Payment Detail's</u></b></h1>
+    <h3>
+        Fee:
+        <input type="text" name="Exam Fees" value="Exam Fees" readonly><br>
+        <br>
+        <div class='row_accord'><label>
+				REG NO :
+			</label>
+            <input type='Text' name='outref11' placeholder="enter redg no." maxLength='75' value='' id='outref11' />
+        </div>
+
+        <input type='hidden' name='controls' value='outref11' id='controls' />
+        <input type='hidden' name='validateMandatory' id='validateMandatory' value='outref11#SEP#REG NO#SEP#(^[0-9a-zA-Z&_. /@-]{1,76}$)#SEP#REG NO Should be valid.' />
+
+
+        <!--Populating fields from control tag-->
+        <div class='row_accord'><label>
+				<br>STUDENT NAME :
+			</label>
+            <input type='Text' name='outref12' maxLength='75' value='' id='outref12' placeholder="Enter Your Name" />
+        </div>
+
+
+        <input type='hidden' name='controls' value='outref12' id='controls' />
+        <input type='hidden' name='validateMandatory' id='validateMandatory' value='outref12#SEP#STUDENT NAME#SEP#(^[0-9a-zA-Z&_. /@-]{1,76}$)#SEP#STUDENT NAME Should be valid.' />
+
+
+        <!--Populating fields from control tag-->
+        <div class='row_accord'><label>
+				<br>FATHER NAME :
+			</label>
+            <input type='Text' name='outref13' maxLength='75' value='' id='outref13' placeholder="Enter Your Father Name" />
+        </div>
+
+        <input type='hidden' name='controls' value='outref13' id='controls' />
+        <input type='hidden' name='validateNotMandatory' id='validateNotMandatory' value='outref13#SEP#FATHER NAME#SEP#(^[0-9a-zA-Z&_. /@-]{1,76}$)#SEP#FATHER NAME Should be valid.' />
+
+
+        <!--Populating fields from control tag-->
+        <div class='row_accord'><label>
+				<br>COURSE :
+			</label>
+            <span class="plain-select-small">
+				<select name='outref14' id='outref14'>
+					<option value=''>--Select COURSE--</option>
+					<option value='B.tech'>B.Tech</option>
+					<option value='other'>Other</option>
+				</select>
+			</span>
+        </div>
+
+        <input type='hidden' name='controls' value='outref14' id='controls' />
+        <input type='hidden' name='validateMandatory' id='validateMandatory' value='outref14#SEP#COURSE#SEP#null#SEP#null' />
+
+
+        <!--Populating fields from control tag-->
+        <div class='row_accord'><label>
+				<br>SEMISTER :
+			</label>
+            <span class="plain-select-small">
+				<select name='outref15' id='outref15'>
+					<option value=''>--Select SEMISTER--</option>
+					<option value='I'>I</option>
+					<option value='II'>II</option>
+					<option value='III'>III</option>
+					<option value='IV'>IV</option>
+					<option value='V'>IV</option>
+					<option value='VI'>IV</option>
+					<option value='VII'>IV</option>
+					<option value='VIII'>IV</option>
+
+				</select>
+			</span>
+        </div>
+
+        <input type='hidden' name='controls' value='outref15' id='controls' />
+        <input type='hidden' name='validateMandatory' id='validateMandatory' value='outref15#SEP#SEMISTER#SEP#null#SEP#null' />
+
+
+        <!--Populating fields from control tag-->
+        <div class='row_accord'><label>
+				<br>AMOUNT :
+			</label>
+            <input type='Variable' name='outref16' maxLength='10' value='' id='outref16' / placeholder="Enter Amount"><br><br>
+        </div>
+
+        <input type='hidden' name='controls' value='outref16' id='controls' />
+        <input type='hidden' name='validateMandatory' id='validateMandatory' value='outref16#SEP#AMOUNT#SEP#(^(\d{1,20})(\.[0-9][0-9])?$)#SEP#AMOUNT Should be valid amount' /> Remarks:
+        <textarea id="tutorial" name="tutorial" rows="5" cols="40"></textarea>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Please enter your Name, Date of Birth&nbsp;<b>(For Personal
+						Banking)&nbsp;/&nbsp;Incorporation&nbsp;(For Corporate Banking)</b> &nbsp;& Mobile Number.
+                    <br>This is required to reprint your e-receipt / remittance(PAP) form, if the need arises.
+
+                </h4>
+            </div>
+
+            <div class="panel-collapse">
+                <div class="panel-body">
+
+                    <div class="row_accord">
+                        <label>Name :</label> <input type="text" name="cusName" id="cusName" maxlength="30" value="" placeholder="Enter Your Name" />&nbsp;
+                        <span id="nameerrmsg"></span>
+                    </div>
+                    <br>
+                    <div class="row_accord">
+                        <!-- <label>Date of Birth / Incorporation:</label> -->
+
+                        <label>Date Of Birth / Incorporation :</label>&nbsp;
+                        <!--  EMRO ends -->
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" maxlength="12" placeholder="Enter date of birth" />
+                        <span id="doberrmsg"></span>
+                    </div>
+                    <br>
+                    <div class="row_accord">
+                        <label>Mobile Number :</label>&nbsp;
+                        <input type="text" name="mobileNo" id="mobileNo" maxlength="10" class="numbersOnly" value="" placeholder="Enter Mobile Number" />
+                        <span id="moberrmsg"></span>
+                    </div><br>
+                    <!--   Added for Payer email alert Start -->
+                    <div class="row_accord">
+                        <label>Email Id: </label>&nbsp;
+                        <input type="text" name="emailId" id="emailId" maxlength="200" value="" placeholder="Enter Your Mail Id" />
+                        <span id="emailerrmsg"></span>
+                    </div><br>
+                    <!--   Added for Payer email alert End -->
+
+
+
+                </div>
+            </div>
+
+
+            <div class="home_btn" align="center">
+                <div class="ct-btn">
+                    <a href="college fee read.html">
+                        <button class="Submit"><span class="bg-height"></span><span
+								class="btn-text">Submit</span></button>
+                    </a>
+                </div>
+                <div class="ct-btn">
+                    <a href="Exam Fees.html">
+                        <button class="Reset"><span class="bg-height"></span><span
+								class="btn-text">Reset</span></button>
+                    </a>
+                </div>
+                <div class="ct-btn">
+                    <a href="Types of fee.html">
+                        <button class="Cancel"><span class="bg-height"></span><span
+								class="btn-text">Back</span></button>
+                    </a>
+                </div>
+
+            </div>
+            <form>
+                <form>
+                    <div class="notifications" style="color:white;">
+                        <ul>
+                            <li>Mandatory fields are marked with an asterisk (*)</li>
+                            <li>The payment structure document if available will contain detailed instructions about the online payment process.</li>
+                            <li>Date specified(if any) should be in the format of 'ddmmyyyy'. Eg., 02082008</li>
+                            <li>For Amount fields, only numbers are allowed and for free text fields (mandatory), following special characters are allowed: . / @ - _ &</li>
+                        </ul>
+                    </div>
+                </form>
+            </form>
+    </h3>
+</body>
+
+</html>
